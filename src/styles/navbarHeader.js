@@ -10,5 +10,13 @@ export const styles = StyleSheet.create({
   },
   text: {
     color: white,
+    fontSize: 18,
+    fontWeight: 'bold',
+  },
+  card: {
+    display: 'flex',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
   }
+
 });
