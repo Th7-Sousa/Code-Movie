@@ -1,10 +1,16 @@
 import { Tabs } from "expo-router";
 import { MaterialIcons } from '@expo/vector-icons';
-import { white, black, gray1, gray2, gray3, blue, orange } from './../../styles/colorPalette'
+import { gray3 } from './../../styles/colorPalette'
 
 export default function TabRoutesLayout() {
   return (
-    <Tabs screenOptions={{ headerShown: false }}>
+    <Tabs
+      screenOptions={
+        {
+          headerShown: false,
+          tabBarStyle: { backgroundColor: gray3, borderColor: gray3, paddingBottom: 8 }
+        }}
+    >
       <Tabs.Screen
         name='index'
         options={{
@@ -34,6 +40,7 @@ export default function TabRoutesLayout() {
           )
         }}
       />
+
     </Tabs>
   )
 }

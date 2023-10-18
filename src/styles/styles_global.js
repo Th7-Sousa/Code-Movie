@@ -7,8 +7,11 @@ export const styles = StyleSheet.create({
     backgroundColor: gray3,
     alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingVertical: 48,
+    paddingVertical: 32,
     paddingHorizontal: 20,
-    gap: 200,
+    gap: 50,
   },
+  text: {
+    color: white,
+  }
 });

@@ -5,18 +5,30 @@ export const styles = StyleSheet.create({
   container: {
     display: 'flex',
     justifyContent: 'center',
-    alignItems: "center",
-    gap: 100,
+    width: '100%',
   },
-  text: {
+
+  textBold: {
     color: white,
     fontSize: 18,
     fontWeight: 'bold',
   },
-  card: {
-    display: 'flex',
+
+  textRegular: {
+    color: white,
+    fontSize: 18,
+  },
+
+  cardHome: {
     flexDirection: 'row',
-    justifyContent: 'space-between',
-  }
+    justifyContent: 'center',
+  },
+
+  cardSearch: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'flex-start',
+    gap: 112,
+  },
 
 });
