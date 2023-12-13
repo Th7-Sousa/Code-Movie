@@ -2,7 +2,6 @@
 
 MVP VERSION
 
-Instalation & Start
-
+Instalation & Start  
 npm install
 npx expo start
