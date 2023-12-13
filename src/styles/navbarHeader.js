@@ -5,12 +5,12 @@ export const styles = StyleSheet.create({
   container: {
     display: 'flex',
     justifyContent: 'center',
-    width: '100%',
+    width: '94%',
   },
 
   textBold: {
     color: white,
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: 'bold',
   },
 
@@ -25,10 +25,10 @@ export const styles = StyleSheet.create({
   },
 
   cardSearch: {
+    display: 'flex',
     flexDirection: 'row',
-    alignItems: 'center',
     justifyContent: 'flex-start',
-    gap: 112,
+    gap: 104,
   },
 
 });

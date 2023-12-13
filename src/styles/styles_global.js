@@ -7,11 +7,21 @@ export const styles = StyleSheet.create({
     backgroundColor: gray3,
     alignItems: 'center',
     justifyContent: 'flex-start',
-    paddingVertical: 32,
+    paddingTop: 32,
     paddingHorizontal: 20,
-    gap: 50,
+    paddingBottom: 16,
+    gap: 40,
   },
+
   text: {
     color: white,
-  }
+  },
+
+  scrollContainer: {
+    display: 'flex',
+    gap: 40,
+  },
+
+
+
 });

@@ -1,8 +1,25 @@
 import { Tabs } from "expo-router";
 import { MaterialIcons } from '@expo/vector-icons';
 import { gray3 } from './../../styles/colorPalette'
+import { useEffect } from "react";
 
 export default function TabRoutesLayout() {
+
+  const options = {
+    method: 'GET',
+    headers: {
+      accept: 'application/json',
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiJmZmVhNmI0NGU0MjEwZjljYjczNzdlZTM5MTE2OTVlOSIsInN1YiI6IjY1MWRlYjkzOGMyMmMwMDBjOTA4YjliYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.P7ppdL_-iHK0G7Y16XP_Bg_z6R-IYL_8YFX6qCTAk7Q'
+    }
+  };
+
+  useEffect(() => {
+    fetch('https://api.themoviedb.org/3/authentication', options)
+      .then(response => response.json())
+      .then(response => console.log(response))
+      .catch(err => console.error(err));
+  }, [options]);
+
   return (
     <Tabs
       screenOptions={
@@ -14,7 +31,7 @@ export default function TabRoutesLayout() {
       <Tabs.Screen
         name='index'
         options={{
-          title: 'Home',
+          title: 'Início',
           tabBarIcon: ({ size, color }) => (
             <MaterialIcons name='home' size={size} color={color} />
           )
@@ -24,7 +41,7 @@ export default function TabRoutesLayout() {
       <Tabs.Screen
         name='search'
         options={{
-          title: 'Search',
+          title: 'Pesquisar',
           tabBarIcon: ({ size, color }) => (
             <MaterialIcons name='search' size={size} color={color} />
           )
@@ -34,7 +51,7 @@ export default function TabRoutesLayout() {
       <Tabs.Screen
         name='watchList'
         options={{
-          title: 'Watch list',
+          title: 'Minha lista',
           tabBarIcon: ({ size, color }) => (
             <MaterialIcons name='bookmark' size={size} color={color} />
           )
