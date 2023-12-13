@@ -3,7 +3,7 @@
 MVP VERSION
 
 
-# Instalation & Start
+Instalation & Start
 
->npm install
->npx expo start
+1 - npm install
+2 - npx expo start
